@@ -1,0 +1,37 @@
+.contacts{
+    margin-top: 120px;
+    background: $orange;
+    height: 133px;
+    &__divider{
+        width: 1px;
+        height: 52px;
+        background: #E0E0E0;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 41px 0 39px 0;
+    }
+    &__item{
+        display: flex;
+        img{
+            margin-right: 14px;
+        }
+    }
+    &__title{
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: $dark1;
+    }
+    a{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: $dark1;
+        text-decoration: none;
+    }
+}

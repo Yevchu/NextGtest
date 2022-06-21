@@ -1,0 +1,24 @@
+.shop{
+    padding-top: 88px;
+    text-align: center;
+    &__title{
+        font-family: 'Rubik';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        color: $dark1;
+        margin-bottom: 40px;
+    }
+    &__descr{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+        margin-bottom: 35px;
+    }
+    &__btn{
+        width: 115px;
+        height: 46px;
+    }
+}
