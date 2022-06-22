@@ -1,0 +1,33 @@
+.benefits{
+    padding-top: 72px;
+    padding-bottom: 53px;
+    background-color: #f7fdfb;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 31px;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: 54px 1fr;
+        row-gap: 15px;
+        column-gap: 20px;
+    }
+    &__title{
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: $dark1;
+        margin: 0;
+    }
+    &__descr{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        grid-column-start: 2;
+    }
+}

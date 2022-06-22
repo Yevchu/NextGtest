@@ -7,23 +7,27 @@
         column-gap: 299px;
     }
     &__item{
+        &_title{
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 12px;
+        }
         &_descr{
             margin-top: 33px
         }
-        ul{
+        &_list{
             list-style-type: none;
             margin: 0;
             padding: 0;
-            li{
-                font-family: 'Open Sans';
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 30px;
-                margin-bottom: 5px;
-                img{
-                    margin-right: 14px;
-                }
-            }
+        }
+        &_links{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 30px;
+            margin-bottom: 5px;
             a{
                 text-decoration: none;
                 color: $grey;
@@ -32,18 +36,15 @@
                 }
             }
         }
-        &_title{
-            font-family: 'Rubik';
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 30px;
-            margin-bottom: 12px;
+        &_img{
+            margin-right: 14px;
         }
     }
     &__divider{
-        width: 1920px;
+        width: 184%;
         height: 1px;
         background: #E1E6EC;
+        margin: 0 -50%;
         margin-top: 60px;
     }
     &__copiright{

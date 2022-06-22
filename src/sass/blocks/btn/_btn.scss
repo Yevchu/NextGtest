@@ -1,6 +1,6 @@
 .btn {
-    width: 123px;
-    height: 47px;
+    width: 115px;
+    height: 46px;
     background: $blue;
     border-radius: 8px;
     font-family: 'Rubik';
@@ -12,6 +12,7 @@
     color: #FFFFFF;
     border: none;
     &_orange{
+        width: 125px;
         background: #FFFFFF;
         border: 1px solid #FFB800;
         color: $orange;

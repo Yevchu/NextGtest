@@ -11,9 +11,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 47px;
-        img{
+        &_img{
             background: #FFFFFF;
             border-radius: 16px 16px 16px 0px;
+            width: 100%;
         }
         &_title{
             font-family: 'Rubik';
@@ -38,11 +39,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }   
-    &__right{
+    &__info-right{
         display: flex;
         align-items: flex-end;
         flex-direction: row-reverse;
         background: url('/img/about_healt_factory.png') center (center/cover) no-repeat;
+        background-size: 100% 100%;
         margin-top: 24px;
         &_descr{
             padding: 60px 30px 56px 30px;
@@ -56,65 +58,67 @@
             color: #FFFFFF;
         }
     }
-    &__left{
+    &__info-left{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1.2fr 0.8fr;
-        &_card{
-            font-family: 'Open Sans';
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 24px;
-            padding:80px 30px 132px 30px;
-            &-white{
-                color: $grey;
-            }
-            &-blue{
-                background: $blue;
-                border-radius: 0px 20px 0px 0px;
-                color: #FFFFFF;
-            }
-            &-orange{
-                background: #FFB800;
-                border-radius: 0px 0px 20px 0px;
-                padding: 45px 40px 49px 38px;
-                grid-column: 1/3;    
-            }
-            &-descr{
-                span{
-                    font-family: 'Rubik';
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 50px;
-                    color: $dark1;
-                }
-                color: #000000;
-                margin-bottom: 28px;
-            }
+    }
+    &__card{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        padding:80px 30px 132px 30px;
+        &-white{
+            color: $grey;
         }
-        &_contacts{
-            display: flex;
-            align-items: center;
-            font-family: 'Open Sans';
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 24px;
-            color: $blue;
-            a{
-                font-size: 24px;
-                color: #000000;
-                text-decoration: none;
+        &-blue{
+            background: $blue;
+            border-radius: 0px 20px 0px 0px;
+            color: #FFFFFF;
+        }
+        &-orange{
+            background: #FFB800;
+            border-radius: 0px 0px 20px 0px;
+            padding: 45px 40px 49px 38px;
+            grid-column: 1/3;    
+        }
+        &_descr{
+            span{
+                font-family: 'Rubik';
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 50px;
+                color: $dark1;
             }
-            img{
-                margin-right: 13px;
-            }
+            color: #000000;
+            margin-bottom: 28px;
+        }
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $blue;
+        a{
+            font-size: 24px;
+            color: #000000;
+            text-decoration: none;
+        }
+        &_img{
+            margin-right: 13px;
         }
         &_btn{
+            width: 125px;
             border: 1px solid $blue;
             background: $orange;
             color: $blue;
         }
     }
+        
     &__divider{
         background: #FFFFFF;
         width: 1px;
@@ -124,6 +128,13 @@
     &__certificates{
         display: flex;
         align-items: center;
+        &_title{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: $grey;
+        }
         &_divider{
             width: 147px;
             height: 1px;
@@ -131,7 +142,7 @@
             margin-left: 16px;
             margin-right: 37px;
         }
-        img{
+        &_img{
             margin: 0 50px;
         }
     }
@@ -139,7 +150,7 @@
         display: grid;
         grid-template-columns: 400px 1fr;
         column-gap: 90px;
-        h2{
+        &_title{
             font-family: 'Rubik';
             font-weight: 700;
             font-size: 48px;
@@ -154,6 +165,9 @@
             line-height: 30px;
             color: $grey;
             margin-bottom: 35px;
+        }
+        &_img{
+            width: 100%;
         }
     }
     &__awards{

@@ -1,0 +1,97 @@
+.header {
+    background: url('/img/main_bg.png') top right no-repeat;
+    background-color: #F7FDFB;
+    background-size: 50% 100%;
+    .menu{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+        &__nav{
+            display: flex;
+            align-items: center;
+        }
+        &__list{
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: space-between;
+            &_mobile{
+                display: none;
+            }
+        }
+        &__link{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $grey;
+            margin-left: 45px;
+            &:first-child{
+                margin-left: 0;
+            }
+            a{
+                text-decoration: none;
+                color: $grey;
+                &:hover{
+                    color: $dark1;
+                }
+            }
+        }
+        &__btn{
+            width: 123px;
+            height: 47px;
+            margin-left: 45px;
+        }
+        &__hamburgher{
+            display: none;
+        }
+    }
+    .content{
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 88px;
+        justify-items: end;
+        align-items: center;
+        &__subtitle{
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            color: $orange;
+            margin-bottom: 30px;
+        }
+        &__title{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 82px;
+            color: $dark1;
+            margin-bottom: 40px;
+        }
+        &__descr{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $grey;
+            margin-bottom: 54px;
+        }
+        &__btn{
+            margin-right: 20px;
+        }
+        &__img{
+            background: #C4C4C4;
+            border-radius: 16px 16px 16px 0px;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+}

@@ -1,0 +1,177 @@
+@media (max-width: 1550px) {
+    .header{
+        .menu{
+            &__list_mobile{
+                display: none;
+            }
+            &__link{
+                margin-left: 30px;
+            }
+            &__btn{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .header{
+        .menu{
+            &__link{
+                margin-left: 25px;
+            }
+            &__btn{
+                width: 120px;
+                height: 42px;
+                margin-left: 25px;
+            }
+        }
+        .content{
+            column-gap: 40px;
+            &__subtitle{
+                margin-bottom: 5px;
+            }
+            &__title{
+                font-size: 60px;
+                line-height: 68px;
+                margin-bottom: 20px;
+            }
+            &__descr{
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .header{
+        .menu{
+            &__link{
+                font-size: 14px;
+                margin-left: 20px;
+            }
+            &__btn{
+                margin-left: 20px;
+            }
+        }
+
+        .content{
+            &__subtitle{
+                font-size: 12px;
+                line-height: 25px;
+            }
+            &__title{
+                font-size: 56px;
+                line-height: 60px;
+            }
+            &__descr{
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header{
+        .content{
+            &__subtitle{
+                font-size: 12px;
+                line-height: 20px;
+            }
+            &__title{
+                font-size: 51px;
+                line-height: 56px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header{
+        .menu{
+            position: relative;
+            &__list{
+                display: none;
+            }
+            &__btn{
+                display: none;
+            }
+            &__hamburgher{
+                display: block;
+                height: 20px;
+                width: 40px;
+                position: absolute;
+                top: 30px;
+                right: 0;
+                z-index: 20;
+                &::before, ::after {
+                    content: "";
+                    display: block;
+                    background: #0C122D;
+                    width: 100%;
+                    height: 4px;
+                    position: absolute;
+                    left: 0;
+                    transform-origin: center center;
+                    transform: rotate(0deg);
+                    transition: all 0.3s ease;
+                }
+                &::before{
+                    top: 2px;
+                    margin-top: -2px;
+                }
+                &::after{
+                    bottom: 2px;
+                    margin-bottom: -2px;
+                }
+            span{
+                display: block;
+                background: #0C122D;
+                width: 100%;
+                height: 4px;
+                margin-top: -2px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+            }
+            }
+        }
+        .content{
+            padding-top: 40px;
+            column-gap: 20px;
+            &__title{
+                font-size: 42px;
+                line-height: 42px;
+            }
+            &__subtitle{
+                line-height: 14px;
+            }
+            &__descr{
+                font-size: 12px;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+            &__btn{
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .header{
+        .content{
+            display: block;
+            &__img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .header{
+        background-size: 100% 100%;
+    }
+}
