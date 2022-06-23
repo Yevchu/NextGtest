@@ -1,6 +1,10 @@
 @import "header/media-header";
 @import "benefits/media-benefits";
-@import "about/media-about.scss";
+@import "about/media-about";
+@import "reviews/media-reviews";
+@import "shop/media-shop";
+@import "contacts/media-contacts";
+@import "footer/media-info";
 
 
 
@@ -38,7 +42,7 @@
 
 @media (max-width: 575px) {
     .wrapper{
-        padding: 0 50px;
+        padding: 0 40px;
     }
 }
 

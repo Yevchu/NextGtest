@@ -1,11 +1,3 @@
-@media (max-width: 1540px) {
-    .benefits{
-        &__title{
-            font-size: 17px;
-        }
-    }
-}
-
 @media (max-width: 1399px) {
     .benefits{
         padding-top: 62px;
@@ -25,6 +17,7 @@
 
 @media (max-width: 1199px) {
     .benefits{
+        padding-bottom: 0;
         &__wrapper{
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);

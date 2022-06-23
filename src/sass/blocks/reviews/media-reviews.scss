@@ -1,0 +1,24 @@
+@media (max-width: 1399px) {
+    .reviews{
+        &__img{
+            width: 85%;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .reviews{
+        &__img{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews{
+        padding: 0;
+        &__img{
+            display: none;
+        }
+    }    
+}

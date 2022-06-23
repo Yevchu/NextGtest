@@ -1,7 +1,6 @@
 .contacts{
     margin-top: 120px;
     background: $orange;
-    height: 133px;
     &__divider{
         width: 1px;
         height: 52px;
@@ -26,7 +25,7 @@
         line-height: 30px;
         color: $dark1;
     }
-    a{
+    &__link{
         font-family: 'Open Sans';
         font-weight: 400;
         font-size: 15px;

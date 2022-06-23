@@ -3,18 +3,6 @@
         &__wrapper{
             align-items: center;
         }
-        &__item{
-            column-gap: 40px;
-            &_title{
-                margin-bottom: 20px;
-                font-size: 43px;
-                line-height: 46px;
-            }
-            &_descr{
-                font-size: 14px;
-                line-height: 26px;
-            }
-        }
         &__card{
             font-size: 13px;
             line-height: 22px;
@@ -230,7 +218,7 @@
             font-size: 12px;
             line-height: 14px;
             &-orange{
-                padding: 35px 30px;
+                padding: 45px 30px;
             }
             &_descr{
                 span{
@@ -299,7 +287,7 @@
         &__item{
             grid-template-columns: auto;
             &_img{
-                display: none;
+                margin: 15px 0;
             }
         }
         &__info{
@@ -318,7 +306,7 @@
         &__reason{
             grid-template-columns: auto;
             &_img{
-                display: none;
+                margin-bottom: 15px
             }
         }
         &__awards{
@@ -328,9 +316,32 @@
 }
 
 @media (max-width: 575px) {
-
+    .about{
+        &__certificates{
+            &_title{
+                font-size: 15px;
+            }
+            &_img{
+                margin: 15px auto;
+                display: block;
+            }
+        }
+        &__awards{
+            &_descr{
+                span{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 374px) {
-
+    .about{
+        &__item{
+            &_title{
+                font-size: 26px;
+            }
+        }
+    }
 }
